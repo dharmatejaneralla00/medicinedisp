@@ -6,7 +6,6 @@ import 'package:medicinedispenser/aboutus.dart';
 import 'package:medicinedispenser/firebase_options.dart';
 import 'package:medicinedispenser/home.dart';
 import 'package:medicinedispenser/intro.dart';
-import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest.dart' as tz;
 
 void main() async {
@@ -20,11 +19,14 @@ void main() async {
       null,
       [
         NotificationChannel(
-            channelKey: '10',
-            channelName: "Notification",
-            channelDescription: 'Medicine Dispenser',
-            channelGroupKey: 'basic_grp',
-            defaultColor: Colors.red.shade100)
+          channelKey: '10',
+          channelName: "Notification",
+          channelDescription: 'Medicine Dispenser',
+          channelGroupKey: 'basic_grp',
+          defaultColor: Colors.red.shade100,
+          playSound: true,
+          importance: NotificationImportance.High,
+        ),
       ],
       channelGroups: [
         NotificationChannelGroup(
@@ -43,11 +45,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        '/home': (context) => HomePage(),
-        '/details': (context) => Details(),
-        '/about': (context) => AboutUs()
+        '/home': (context) => const HomePage(),
+        '/details': (context) => const Details(),
+        '/about': (context) => const AboutUs()
       },
-      home: IntroPage(),
+      home: const IntroPage(),
     );
   }
 }

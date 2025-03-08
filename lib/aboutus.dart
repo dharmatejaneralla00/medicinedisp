@@ -80,48 +80,48 @@ class AboutUs extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              Text("A Project on"),
+              const Text("A Project on"),
               Text(
                 "Medical Dispenser",
                 style:
                     GoogleFonts.mali(fontSize: 24, color: Colors.red.shade400),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
-              Text("Team Details"),
-              SizedBox(
+              const Text("Team Details"),
+              const SizedBox(
                 height: 20,
               ),
               Text(
                 "M. LAYA SRI",
                 style: GoogleFonts.mali(fontSize: 22, color: Colors.red),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
               Text(
                 "L. DHARANI",
                 style: GoogleFonts.mali(fontSize: 22, color: Colors.red),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
               Text(
                 "V.RESHMI SAI",
                 style: GoogleFonts.mali(fontSize: 22, color: Colors.red),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
               Text(
                 "P. MANJULA",
                 style: GoogleFonts.mali(fontSize: 22, color: Colors.red),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               Text(

@@ -200,7 +200,7 @@ class _DetailsState extends State<Details> {
                   _image == ''
                       ? const Text('No image selected.')
                       : Image.file(_image!),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Builder(builder: (context) {
